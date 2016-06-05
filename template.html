@@ -11,6 +11,16 @@
 		{# upload your own favicon.png to the root of your repo and replace with href="favicon.png" #}
 		<link rel="icon" type="image/png" href="http://getstoryshop.com/img/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="http://getstoryshop.com/img/favicon-16x16.png" sizes="16x16" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="linkify.min.js"></script>
+		<script src="linkify-jquery.min.js"></script>
+
+		<script type="text/javascript">
+		$( document ).ready(function() {
+			$('p').linkify();
+		});
+		</script>
 	</head>
 	<body>
 
