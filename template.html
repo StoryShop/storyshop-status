@@ -67,7 +67,7 @@
 						<hr/>
 
 						<span class="title">{{ incident.title }}</span>
-						<p style="white-space:pre;">{{ incident.body }}</p>
+						<p style="white-space:pre-wrap;">{{ incident.body }}</p>
 						{% for update in incident.updates %}
 							<p><em>Update {{ update.created }}</em><br/>
 							{{ update.body }}
