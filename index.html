@@ -64,6 +64,62 @@
 				
 					
 					<div class="incident">
+						<span class="date">2016-06-10 18:37:03</span>
+
+						
+							<span class="label investigating float-right">investigating</span>
+						
+						
+							<span class="label system float-right">App</span>
+						
+						<hr/>
+
+						<span class="title">StoryShop Service Restored - Continuing to Monitor Closely</span>
+						<p style="white-space:pre-wrap;">As of ~2:30p EST Friday, June 10, StoryShop has been restored to an operational state, and we are downgrading status urgency from `major outage` to `investigating` while we monitor performance to confirm the issue & its myriad manifest side effects have, in fact, been resolved.
+
+All teams involved upstream in troubleshooting and correcting the problem, at our database service provider mLab ( http://mlab.com ) and at MongoDB ( https://www.mongodb.com/ ) are playing an active role in ensuring this bug has been absolutely solved; and in taking steps to modify deployment practices to ensure breaking changes are not included in minor patch versions of the Node.js driver moving forward.
+
+We believe that the most noticable improvement in performance for our users will be the behavior of the `Create` and `+` buttons in Characters, Elements and Outlines. Additionally, we believe this will resolve the problem of our beta testers landing on the "StoryShop is currently in private beta." page in error.
+
+Noteworthy is that there is, in fact, a small delay to be expected between the clicking of a `Create` button and the creation of the new item, as the signal is sent from browser to server to database and back. This entire round trip should generally be measurable in milliseconds, but it can sometimes take a few seconds to complete. As we continue to work on improving performance, it is still reasonable to expect maybe as much as a 3 second delay during high traffic times, or a bit longer if you are on a particularly slow connection.
+
+It is also worth mentioning that, in Safari, it can sometimes take a couple clicks in quick succession to get the `+` button to work. Clicks spaced too far apart will have no effect. If clicking a few times swiftly still does nothing, please feel free to bring it to our attention through a support ticket at http://feedback.storyshopapp.com
+
+Our short term plan to aleviate the frustration inherent in beta users not knowing if they are "just waiting a few seconds" or "experiencing another outage" will be to add some sort of "spinner" or "scroller" indicator during brief delays, and proper error messages in case of failure.
+
+Long term, it is part of our larger plan to greater rely on browser local storage so that brief intermittent outages or periods of being disconnected from a live web connection will not interfere with the performance of the app once loaded & cached locally. We also have some planned improvements for the creation process itself that will improve the overall user experience.
+
+==================================
+RECOVERY STEPS TO TRY IF NECESSARY
+==================================
+
+Now that things are back up and running, some of you may still encounter residual issues related to your browser history and login. Some of you may already be familar with these steps, from previous status updates or ticket on the feedback site, but they are included again here for convenience.
+
+The first thing to try if faced with this is to de-authenticate the StoryShop app from within your Google account itself, then try to log back in. The direct link to change this in your currently-active Google account's permissions settings is https://security.google.com/settings/security/permissions
+
+If this step does not work, and you still find yourself trapped at the "private beta" page or elsewhere, you may need to take the following few steps:
+
+1. Assuming a page with the address of http://storyshopapp.com/#/beta
+
+2. Click the address bar and manually delete the 'beta' part, leaving just http://storyshopapp.com/#/ - then hit the "enter" key on the keyboard.
+
+3. Hopefully that'll lead to a page showing just the word "Login" - now click the refresh button in the browser, it should flash the Google login button, then redirect into the app.
+
+If the above steps do not work, there is a chance you successfully accessed StoryShop in the first few hours from a gmail account that was not associated with your Kickstarter account before we discovered a crack in the fence that was letting non-backers in. You will need to either de-authenticate as above, then sign back in under the appropriate address.
+
+If all else fails, please contact us for support through http://feedback.storyshopapp.com so we can update your address in our database to the proper Google account.
+
+==================================
+
+We're so grateful to everyone who has helped us get through these first few days with your informative reports, great ideas, and words of encouragement. Though it felt catastrophic for a spell, your participation is absolutely vital in battle-testing & fire-hardening StoryShop.
+
+Thank you, and welcome back!
+
+-Seth</p>
+						
+					</div>
+					
+					<div class="incident">
 						<span class="date">2016-06-10 00:54:08</span>
 
 						
