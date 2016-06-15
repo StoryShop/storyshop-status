@@ -51,11 +51,11 @@
 				<ul class="systems">
 					
 					<li>
-						Feedback <span class="status operational">operational</span>
+						App <span class="status investigating">investigating</span>
 					</li>
 					
 					<li>
-						App <span class="status investigating">investigating</span>
+						Feedback <span class="status operational">operational</span>
 					</li>
 					
 				</ul>
@@ -86,7 +86,9 @@ This bug is referenced in the following open issues on the material-ui repositor
 `https://github.com/callemall/material-ui/issues/1396`
 `https://github.com/callemall/material-ui/issues/1370`
 
-The common fix is to disable the "ripple" animation for the `+` buttons. However, because this ripple animation is part of the core Material Design spec from Google ( https://material.google.com/components/buttons-floating-action-button.html ), we consider this fix to be a temporary solution, and will monitor the above issues for a permanent upstream resolution to be folded into StoryShop when it is ready.</p>
+The common fix is to disable the "ripple" animation for the `+` buttons. However, because this ripple animation is part of the core Material Design spec from Google ( https://material.google.com/components/buttons-floating-action-button.html ), we consider this fix to be a temporary solution, and will monitor the above issues for a permanent upstream resolution to be folded into StoryShop when it is ready.
+
+For users on Safari or Firefox who have been experiencing this issue, a page reload should lead the browser to download the latest, patched version of the StoryShop app from the server. In some stubborn cases, holding down the "shift" key while clicking the reload button in the browser may be required to force the refresh.</p>
 						
 					</div>
 					
