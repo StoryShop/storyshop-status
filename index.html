@@ -51,17 +51,44 @@
 				<ul class="systems">
 					
 					<li>
-						App <span class="status investigating">investigating</span>
+						Feedback <span class="status operational">operational</span>
 					</li>
 					
 					<li>
-						Feedback <span class="status operational">operational</span>
+						App <span class="status investigating">investigating</span>
 					</li>
 					
 				</ul>
 
 				<h4>Incidents</h4>
 				
+					
+					<div class="incident">
+						<span class="date">2016-06-15 01:21:54</span>
+
+						
+							<span class="label investigating float-right">investigating</span>
+						
+						
+							<span class="label system float-right">App</span>
+						
+						<hr/>
+
+						<span class="title">Workaround Found for + Button Bug in Safari & Firefox</span>
+						<p style="white-space:pre-wrap;">As of ~7pm EST Tuesday, June 14, the lingering bug affecting the behavior of the `+` buttons to create new Worlds, Characters, Elements and Outlines in some browsers, most commonly Safari, has been resolved.
+
+Our research of this problem led to a known bug in one of the libraries powering interaction on the front end of the StoryShop application, Material-UI ( http://www.material-ui.com/ ). There are some cases in which a rapid double-click is required to trigger the button action.
+
+This bug is referenced in the following open issues on the material-ui repository:
+
+`https://github.com/callemall/material-ui/issues/2568`
+`https://github.com/callemall/material-ui/issues/4421`
+`https://github.com/callemall/material-ui/issues/1396`
+`https://github.com/callemall/material-ui/issues/1370`
+
+The common fix is to disable the "ripple" animation for the `+` buttons. However, because this ripple animation is part of the core Material Design spec from Google ( https://material.google.com/components/buttons-floating-action-button.html ), we consider this fix to be a temporary solution, and will monitor the above issues for a permanent upstream resolution to be folded into StoryShop when it is ready.</p>
+						
+					</div>
 					
 					<div class="incident">
 						<span class="date">2016-06-10 18:37:03</span>
